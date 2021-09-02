@@ -1,0 +1,99 @@
+QMainWindow{
+    background-color: teal;
+}
+
+QMenuBar#menu{
+    background-color:#000;
+    color: #fff;
+}
+
+QRadioButton{
+    font: italic 20pt 'Tinos';
+    color: #f5deb3;
+    outline: none;
+}
+
+QRadioButton:checked{
+    border-bottom: 2px solid #f5deb3;
+    font: italic 20pt "Tinos";
+    margin-bottom: 5px;
+}
+
+QRadioButton:hover{
+    color:#d8c49f;
+}
+
+QRadioButton::indicator{
+    width: 0px;
+    height: 20px;
+}
+
+QGroupBox#radio_group{
+    background-color:#8f8269;
+    border: 1px solid #8f8269;
+    border-radius:10px;
+}
+
+QLabel#counter{
+    font: italic 48pt 'Tinos';
+    color:#f5deb3
+}
+
+QPushButton#start_btn{
+    font:italic 20pt 'Tinos';
+    background-color: mintcream;
+    color:peru;
+    border:5px solid mediumaquamarine;
+    border-radius: 25px;
+    padding:8px;
+    width: 130px;
+}
+
+QPushButton#start_btn:hover{
+    border:8px solid #f5deb3;
+}
+
+QPushButton#restart_btn{
+    border-radius: 30px;
+}
+
+QPushButton#vol_ico{
+    border-radius: 30px;
+    outline: none;
+    
+}
+
+QPushButton#video_button { 
+    border:1px;
+    margin: 3px;
+}
+
+QSlider::groove:horizontal {
+    border: 1px solid #bbb;
+    background-color: #555555;
+    height: 10px;
+    border-radius: 4px;
+    }
+    
+QSlider::sub-page:horizontal {
+    background-color:#2ecc71;
+    border: 1px solid #777;
+    height: 10px;
+    border-radius: 4px;
+}
+
+QSlider::add-page:horizontal {
+    background-color: #555555;
+    border: 1px solid #777;
+    height: 10px;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background-color: white;
+    border: 1px solid white;
+    width: 13px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    border-radius: 6px;
+}
