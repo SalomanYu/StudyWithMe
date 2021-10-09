@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 from PyQt5 import QtCore, Qt
 from PyQt5.QtCore import QSize, QUrl
 from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
@@ -166,6 +166,7 @@ class VideoPlayer(QMainWindow):
         self.volumeLayout = QHBoxLayout()
         self.vol_ico = QPushButton('')
         self.vol_ico.setIcon(QIcon(QPixmap('media/icons/volume.svg')))
+        self.vol_ico.setCursor(QCursor(QtCore.Qt.PointingHandCursor))
         self.vol_ico.clicked.connect(lambda: self.vol_slider.setValue(0))
         self.vol_ico.setIconSize(QSize(40,40))
         self.vol_ico.setObjectName('vol_ico')
