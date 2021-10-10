@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=File Runner
-Version=1.0
-Exec=/home/saloman/GitHub/StudyWithMe/main.py
-Icon=/home/saloman/GitHub/StudyWithMe/app.ico
-Type=Application
-Terminal=true
-
