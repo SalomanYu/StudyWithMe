@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-from PyQt5 import QtCore, Qt
+
+from PyQt5 import QtCore
 from PyQt5.QtCore import QSize, QUrl
 from PyQt5.QtMultimedia import QMediaContent, QMediaPlayer
 from PyQt5.QtMultimediaWidgets import QVideoWidget
@@ -388,17 +389,17 @@ class VideoPlayer(QMainWindow):
         event.accept()
         sys.exit()
      
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    videoplayer = VideoPlayer()
 
-app = QApplication(sys.argv)
-videoplayer = VideoPlayer()
+    style = ''
+    with open('style.css', 'r') as file:
+        for line in file:
+            style += line
 
-style = ''
-with open('style.css', 'r') as file:
-    for line in file:
-        style += line
+    videoplayer.setStyleSheet(style)
+    videoplayer.showMaximized()
+    videoplayer.show()
 
-videoplayer.setStyleSheet(style)
-videoplayer.showMaximized()
-videoplayer.show()
-
-sys.exit(app.exec_())
+    sys.exit(app.exec_())

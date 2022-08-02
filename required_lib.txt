@@ -1,3 +1,0 @@
-1. pip install PyQt5
-2. sudo apt install python3-pyqt5.qtmultimedia 
-3. pip install playsound
